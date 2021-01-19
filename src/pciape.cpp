@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 
     scr.darea_init(tree);
 
-    gapp = gtk_application_new("org.gtk.pci_viewer", G_APPLICATION_FLAGS_NONE);
+    gapp = gtk_application_new("org.gtk.pciape.pciviewer", G_APPLICATION_FLAGS_NONE);
     g_signal_connect(gapp, "activate", G_CALLBACK(activate), &res);
     int status = g_application_run(G_APPLICATION(gapp), argc, argv);
 
